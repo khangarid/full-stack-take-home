@@ -1,0 +1,21 @@
+.chart {
+  cursor: zoom-in;
+}
+
+.chart--expanded {
+  z-index: 2;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+
+  canvas {
+    transition: all .5s ease;
+  }
+}

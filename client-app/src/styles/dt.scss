@@ -1,0 +1,73 @@
+.dt {
+  margin-top: $dimension-padding-0/2;
+  background-color: $color-bg-0;
+  min-height: 150px;
+  transition: .2s ease;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.dt__table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 500px;
+  transition: height .2s ease;
+}
+
+.dt__table__head {
+  color: $color-accent;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 600;
+}
+
+.dt__table__row {
+  &:hover .dt__table__cell {
+    background-color: $color-bg-1;
+  }
+}
+
+.dt__table__row--highlight {
+  background-color: $color-bg-accent;
+}
+
+.dt__table__cell {
+  border-top: 1px solid #eee;
+  border-left: 2px solid $color-bg-0;
+  border-right: 2px solid $color-bg-0;
+  padding: 0 1.5rem;
+  line-height: $dimension-padding-0;
+
+  &:first-child {
+    font-weight: 600;
+  }
+}
+
+.dt__table__head__cell {
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-bg-1;
+  }
+}
+
+.dt__table__cell--asc,
+.dt__table__cell--desc {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    left: 10px;
+    display: block;
+    font-size: 1.5rem;
+    line-height: $dimension-padding-0;
+  }
+}
+
+.dt__table__cell--asc:before {
+  content: '\02191';
+}
+
+.dt__table__cell--desc:before {
+  content: '\02193';
+}

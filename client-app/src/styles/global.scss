@@ -1,0 +1,64 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: $color-bg-1;
+  color: $color-text;
+}
+
+a {
+  color: $color-text;
+  transition: color .2s ease;
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+h1 {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0 0 $dimension-padding-0 0;
+  font-size: $dimension-padding-1;
+  line-height: $dimension-padding-1;
+}
+
+.layout {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: $dimension-padding-0 1rem;
+}
+
+.container {
+  box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background: $color-accent;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.3);
+  transition: all .2s ease;
+  padding: 0 $dimension-padding-1;
+  cursor: pointer;
+  color: $color-bg-0;
+  font-weight: 600;
+  line-height: 2.65rem;
+  height: 2.65rem;
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  &[disabled] {
+    cursor: wait;
+    background: $color-accent-light;
+  }
+}

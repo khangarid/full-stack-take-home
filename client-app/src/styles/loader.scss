@@ -1,0 +1,33 @@
+.loader__container {
+  position: relative;
+
+  &:before {
+    transition: background-color .2s ease;
+  }
+}
+
+.loader__container--loading {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: rgba(255,255,255,0.7);
+  }
+}
+
+.loader {
+  height: 5rem;
+  position: absolute;
+  top: calc(50% - 2.5rem);
+  width: 100%;
+}
+
+.loader__image {
+  height: 100%;
+  display: table;
+  margin: 0 auto;
+}

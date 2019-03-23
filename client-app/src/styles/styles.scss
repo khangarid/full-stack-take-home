@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
+
+$color-accent: #e74c3c;
+$color-accent-light: #ef8b80;
+$color-text: #4a4a4a;
+$color-bg-0: #fff;
+$color-bg-1: #fafafa;
+$color-bg-2: #f5f5f5;
+$color-bg-3: #eee;
+$color-bg-accent: #fef3f2;
+$dimension-padding-0: 3rem;
+$dimension-padding-1: 2rem;
+
+@import 'global';
+@import 'dt';
+@import 'form';
+@import 'hint';
+@import 'loader';
+@import 'pagination';
+@import 'chart';

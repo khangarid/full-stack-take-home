@@ -1,0 +1,87 @@
+.form {
+  display: block;
+}
+
+.form__input-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: $dimension-padding-1;
+}
+
+.form__label {
+  position: absolute;
+  top: -.4rem;
+  left: 0.7rem;
+  background-color: $color-bg-1;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: $color-accent;
+  padding: 0 0.8rem;
+}
+
+.form__input {
+  padding: 0.8rem 1.5rem;
+  margin-right: $dimension-padding-1;
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: none;
+  transition: border-color .2s ease;
+
+  &:focus {
+    outline: thin;
+    border-color: $color-accent;
+  }
+}
+
+.form__input__error {
+  position: absolute;
+  bottom: -1.1rem;
+  left: 0;
+}
+
+// Entries form
+
+.entires-form__button {
+  margin-bottom: $dimension-padding-1;
+}
+
+// Login form
+
+.lf {
+  padding: $dimension-padding-0;
+  background-color: $color-bg-0;
+  transform: scale(1);
+  opacity: 1;
+  transition: all .2s ease;
+}
+
+.lf--shrink {
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+.lf__form {
+}
+
+.lf__input-wrapper {
+  display: block;
+}
+
+.lf__input {
+  margin: 0;
+  min-width: 20rem;
+}
+
+.lf__form__submit {
+  margin-top: 1.5rem;
+}
+
+.error {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $color-accent;
+}
