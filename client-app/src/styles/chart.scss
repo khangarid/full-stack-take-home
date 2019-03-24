@@ -5,7 +5,7 @@
 
 .chart__rotate-phone {
   position: absolute;
-  bottom: 1rem;
+  bottom: 4rem;
   left: calc(50% - 1.5rem);
   width: 3rem;
   display: none;
@@ -18,9 +18,17 @@
   background-color: transparent;
   color: $color-accent;
   box-shadow: none;
+  padding: 0 1rem;
+  line-height: 1.5rem;
+  height: 1.5rem;
+
+  @media(min-width: 600px) {
+    top: 1.5rem;
+    right: 1.5rem;
+  }
 
   &:hover {
-    background-color: $color-bg-3;
+    color: $color-text;
   }
 }
 

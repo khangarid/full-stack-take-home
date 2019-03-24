@@ -59,7 +59,7 @@ const EntriesChart = ({ data }) => {
           className="btn chart__btn"
           onClick={() => setExpanded(!expanded)}
         >
-          {expanded ? "Collapse" : "Expand"}
+          <span role="img" aria-label="Expand">&#x1F50D;</span>
         </button>
         <Line data={data} options={options} />
         <img className="chart__rotate-phone" alt="Rotate phone" src="/rotate_phone.gif" />

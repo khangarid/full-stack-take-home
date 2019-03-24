@@ -64,6 +64,11 @@
     display: block;
     font-size: 1.5rem;
     line-height: 1rem;
+
+    @media(max-width: 600px) {
+      left: 1px;
+      color: #999;
+    }
   }
 }
 
