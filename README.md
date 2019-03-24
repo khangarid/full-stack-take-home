@@ -10,7 +10,7 @@ At the root directory:
 
 ```bash
 yarn install
-cd client/
+cd client-app/
 yarn install
 ```
 

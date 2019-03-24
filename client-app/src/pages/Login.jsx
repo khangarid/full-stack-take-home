@@ -4,9 +4,7 @@ import { LoginForm } from '../containers';
 
 const Login = () => {
   return (
-    <div className="center">
-      <LoginForm />
-    </div>
+    <LoginForm />
   )
 };
 

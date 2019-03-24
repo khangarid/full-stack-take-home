@@ -10,7 +10,7 @@
 .dt__table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 500px;
+  min-width: 350px;
   transition: height .2s ease;
 }
 
@@ -35,11 +35,14 @@
   border-top: 1px solid #eee;
   border-left: 2px solid $color-bg-0;
   border-right: 2px solid $color-bg-0;
-  padding: 0 1.5rem;
-  line-height: $dimension-padding-0;
+  padding: 0.9rem 1.5rem;
 
   &:first-child {
     font-weight: 600;
+  }
+
+  @media(max-width: 600px) {
+    padding: 0.9rem 0.25rem 0.9rem 1rem;
   }
 }
 
@@ -57,10 +60,10 @@
 
   &:before {
     position: absolute;
-    left: 10px;
+    left: 5px;
     display: block;
     font-size: 1.5rem;
-    line-height: $dimension-padding-0;
+    line-height: 1rem;
   }
 }
 

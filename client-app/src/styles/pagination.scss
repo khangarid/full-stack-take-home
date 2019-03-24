@@ -1,6 +1,7 @@
 .pagination {
   display: flex;
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 0 0;
+  margin-bottom: $dimension-padding-0;
   overflow-x: auto;
 }
 
@@ -32,6 +33,7 @@
 
 .pagination__select-wrapper {
   margin-right: auto;
+  margin-bottom: 0;
 }
 
 .pagination__select {

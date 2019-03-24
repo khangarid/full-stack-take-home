@@ -17,7 +17,7 @@
     background-color: rgba(0,0,0,0.9);
   }
 
-  @media(max-width: 1450px) {
+  @media(max-width: 600px) {
     display: none;
   }
 }
@@ -37,6 +37,10 @@
   border-right: 3px solid $color-accent;
   left: -13.5rem;
   top: calc(50% - 26px);
+
+  @media(max-width: 1450px) {
+    display: none;
+  }
 }
 
 .hint__inner--right {

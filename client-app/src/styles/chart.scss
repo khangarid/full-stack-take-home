@@ -1,5 +1,27 @@
 .chart {
   cursor: zoom-in;
+  position: relative;
+}
+
+.chart__rotate-phone {
+  position: absolute;
+  bottom: 1rem;
+  left: calc(50% - 1.5rem);
+  width: 3rem;
+  display: none;
+}
+
+.chart__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  color: $color-accent;
+  box-shadow: none;
+
+  &:hover {
+    background-color: $color-bg-3;
+  }
 }
 
 .chart--expanded {
@@ -17,5 +39,11 @@
 
   canvas {
     transition: all .5s ease;
+  }
+
+  @media(max-width: 600px) {
+    .chart__rotate-phone {
+      display: block;
+    }
   }
 }
